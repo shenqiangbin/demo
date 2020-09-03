@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.UserMapper">
+        <select id="getAll" resultType="com.example.demo.entity.User">
+            SELECT *
+            FROM user
+        </select>
+
+<!--    <select id="getAllDbLocation" resultType="cnki.cqsd.entity.task.DbLocation">-->
+<!--        SELECT Id,LocationName,serverIP,serverDB,serverPort,tableAmount,maxTableAmount,formSetting-->
+<!--        FROM nv_dblocation-->
+<!--    </select>-->
+
+<!--    <select id="getAllDbLocationWithPwd" resultType="cnki.cqsd.entity.task.DbLocation">-->
+<!--        SELECT Id,LocationName,serverIP,serverDB,serverPort,serverUser,serverPwd,tableAmount,maxTableAmount,formSetting-->
+<!--        FROM nv_dblocation-->
+<!--    </select>-->
+
+<!--    <select id="getDbLocationById" resultType="cnki.cqsd.entity.task.DbLocation">-->
+<!--        SELECT Id,LocationName,ServerIP,ServerDB,serverPort,ServerUser,ServerPwd,formSetting-->
+<!--        FROM nv_dblocation-->
+<!--        where Id = #{Id}-->
+<!--    </select>-->
+
+<!--    <insert id="addDatabase" parameterType="cnki.cqsd.entity.task.Database">-->
+<!--        insert into nv_database (DatabaseCode,DatabaseName,LocationName,ServerIP,ServerDB,serverPort,ServerUser,ServerPwd,CreateUser,CreateTime,DatabaseType,OrgId,UpdateUser,UpdateTime)-->
+<!--        values (#{databaseCode},#{databaseName},#{locationName},#{serverIP},#{serverDB},#{serverPort},#{serverUser},#{serverPwd},#{createUser},now(),1,#{orgId},#{createUser},now())-->
+<!--    </insert>-->
+
+<!--    <delete id="delDatabase" parameterType="java.lang.String">-->
+<!--        delete from nv_database where DatabaseCode=#{DatabaseCode}-->
+<!--    </delete>-->
+
+<!--    <update id="updateDatabase" parameterType="cnki.cqsd.entity.task.Database">-->
+<!--        update nv_database-->
+<!--        set DatabaseName=#{databaseName},UpdateUser=#{updateUser},UpdateTime=now()-->
+<!--        where DatabaseCode=#{databaseCode}-->
+<!--    </update>-->
+
+<!--    <update id="updateFormSetting">-->
+<!--        update nv_database set formSetting = #{formSetting} where databasecode = #{code}-->
+<!--    </update>-->
+
+<!--    <select id="getDatabaseByOrgID" resultType="cnki.cqsd.entity.task.Database">-->
+<!--        SELECT DatabaseCode,DatabaseName,LocationName,serverPort,ServerIP,ServerDB,formSetting-->
+<!--        FROM nv_database-->
+<!--        where OrgId = #{OrganizationID} order by createtime asc-->
+<!--    </select>-->
+
+<!--    <update id="updateAmount">-->
+<!--        update nv_dblocation set tableAmount = #{totalAmount} where id = #{id}-->
+<!--    </update>-->
+
+<!--    <select id="getDatabase" resultType="cnki.cqsd.entity.task.Database">-->
+<!--        SELECT DatabaseCode,DatabaseName,LocationName,ServerIP,ServerDB,serverPort,ServerUser,ServerPwd,formSetting FROM nv_database where DatabaseCode = #{databaseCode}-->
+<!--    </select>-->
+
+</mapper>

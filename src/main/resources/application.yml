@@ -1,0 +1,22 @@
+server:
+  port: 9997
+spring:
+  datasource:
+    mysql:
+      Schema: tablebigdata
+      JdbcUrl: jdbc:mysql://10.170.128.56:3306/tablebigdata?useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+      DriverClassName: com.mysql.cj.jdbc.Driver
+      Username: root
+      Password: 123456
+    mysql2:
+      Schema: tablebigdata
+      JdbcUrl: jdbc:mysql://127.0.0.1:3306/tablebigdata?useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+      DriverClassName: com.mysql.cj.jdbc.Driver
+      Username: root
+      Password: 123456
+mybatis:
+  typeAliasesPackage: com.example.demo.entity
+  mapperLocations: classpath*:/mapping/*.xml
+debug: true
+transaction:
+  rollback-on-commit-failure: true
